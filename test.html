@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Upload</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.custom-file-label {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom-file-label:hover {
+    background-color: #45a049;
+}
+
+.custom-file-input {
+    display: none; /* Hide the actual file input */
+}
+
+#file-chosen {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="form-group">
+    <label for="Image" class="custom-file-label">Upload Image</label>
+    <input type="file" id="Image" name="Image" class="custom-file-input">
+    <span id="file-chosen">No file chosen</span>
+</div>
+
+<script>
+    const fileInput = document.getElementById('Image');
+    const fileChosen = document.getElementById('file-chosen');
+
+    fileInput.addEventListener('change', function () {
+        fileChosen.textContent = this.files[0].name;
+    });
+</script>
+
+</body>
+</html>

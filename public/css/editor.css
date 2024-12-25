@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.edit-container{
+    padding: 3rem;
+    padding-top: 4rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;  /* Horizontally centers the content */
+      flex-direction: column;
+      background-color: rgb(246, 241, 233);
+} 
+
+ .edit-form{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+     align-items: center;  /* Horizontally centers the content */
+     flex-direction: column;
+    gap: .5rem;
+     /* background-color: white;  */
+ } 
+   
+ #title{
+    width: 60vw;
+    height: 2.5rem;
+    padding: 0.1rem;
+ }
+
+ .ck.ck-editor{
+    width: 60vw !important;
+ }
+
+ .ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{
+    height: 20vw !important;
+
+ }
+
+ .edit-img{
+   height: 55vh;
+ }
+ 
+ .form-img{
+    width: 60vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+ }
+
+ #Image{
+    display: none;
+ }
+
+ .btn{
+   width: 60vw;
+   padding: 0.5rem;
+   font-size: medium;
+   font-weight: 400;
+   border: none;
+   border-radius: 2px;
+   background-color: rgba(148,122,164,1);
+   color: white;
+}
+
+.btn:hover{
+   box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.10);
+
+}

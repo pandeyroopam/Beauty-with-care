@@ -1,0 +1,367 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* Container */
+ body{
+   padding-top: 120px;
+   overflow-x: hidden;
+
+ }
+ .container{
+   width: 100vw;
+   /* height: 100vh; */
+   display: block;
+    background-color: rgb(246, 241, 233);
+    z-index: 1000;
+ }
+ /* navContainer */
+ .navContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* High value to stay on top ,  The z-index determines the stacking order of elements, and a higher z-index value means the element will be on top of elements with lower values*/
+
+ }
+ /* logo */
+ .logo img{
+   width: 100px;
+   height: 75px;
+   margin: 0;
+ }
+ .logo{
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   background: rgb(238,182,216);
+  background: radial-gradient(circle, rgba(238,182,216,1) 0%, rgba(148,122,164,1) 100%);
+   text-align: center;
+   width: 100vw;
+   max-height: 80px;
+   font-family: "Playfair Display", serif;
+}
+ /* link */
+ .link a{
+    text-decoration: none;
+    color: white;
+    font-family: "Lato", sans-serif;
+
+ }
+ .link a:hover{
+    color: blue;
+ }
+ .link{
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(178, 121, 178, 0.596);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+
+
+ 
+/* body */
+.structure{
+   width: 100vw;
+   height: 100vh;
+}
+ /* slide show section */
+.slideShow{
+   margin-top: 100px;
+   width: 90vw;
+   height: 80vh;
+margin: auto;
+box-shadow: 0px 0px 3px grey;
+display: flex;
+overflow: hidden;
+}
+.mySlides{
+   width: 100%;
+   height: 100%;
+}
+
+section {
+   scroll-margin-top: 120px;
+}
+
+/* .prev, .next{
+   cursor: pointer;
+   position: absolute;
+   color: red;
+   top: 130%;
+   margin-top: -22px;
+   width: auto;
+   padding: 16px;
+   font-weight: bold;
+   font-size: 18px;
+   border-radius: 0 3px 3px 0;
+   transition: 0.8s ease;
+   user-select: none;
+} */
+/* .next{
+   right: 10%;
+   border-radius: 3px 0 0 3px;
+}
+.prev{
+   left: 10% ;
+}
+
+.prev:hover, .next:hover{
+   background-color: rgba(0, 0, 0, 0.8);
+} */
+
+.dot{
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   margin: 0 2px;
+   background-color: #bbb;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover{
+   background-color: #717171 ;
+}
+
+/* product bio section */
+/* styling heading tag */
+
+
+.bio{
+   background-color: rgb(243, 204, 243);
+   width: 100vw;
+
+}
+.bio h1{
+   text-align: center;
+   color: rgba(156, 64, 156, 0.838);
+   font-size: 30px;
+   margin-top: 10px;
+   padding: 20px;
+}
+
+/* styling product section body */
+.breif{
+  
+   background-color: rgb(243, 204, 243);
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+   
+}
+.product{
+   display: flex;
+   width: 80vw;
+   height: 70vh;
+   justify-content: center;
+   align-items: center;
+   background-color: aliceblue;
+   padding: 40px;
+   gap: 20px;
+}
+.image img{
+   width: 25vw;
+   height:50vh;
+   margin: 10px;
+   border-radius: 10%;
+}
+/* NewsLetter Section*/
+#NewsLetter{
+  background-color: rgb(246, 241, 233) ;
+  width: 100vw;
+   height: 90vh;
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#NewsLetter h2{
+   color: rgba(156, 64, 156, 0.838);
+   text-align: center;
+   font-size: 30px;
+   padding: 20px;
+}
+.block{
+   background-image: url(./images/beauty.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* blur effect */
+   filter: blur(3px);
+   border: black solid;
+   width: 80vw;
+   height: 70vh;
+   z-index: 1; /* Lower value to go under the navbar */
+   position: relative; /* Ensure it's positioned within the normal flow */
+}
+
+.signup{
+   display: grid;
+}
+
+/* newsletter section */
+
+.newsletter-container {
+   background: #ffffff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 20px 30px;
+   width: 70%;
+   height: 70%;
+   text-align: center;
+}
+
+.newsletter-container h2 {
+   margin-bottom: 10px;
+   font-size: 24px;
+}
+
+.newsletter-container p {
+   font-size: 16px;
+   color: #6c757d;
+   margin-bottom: 20px;
+}
+
+.newsletter-container input[type="email"] {
+   margin: 2rem;
+   width: 60%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+.newsletter-container button {
+   margin-top: 2rem;
+   background-color: #007bff;
+   color: #ffffff;
+   border: none;
+   padding: 10px 15px;
+   font-size: 16px;
+   border-radius: 5px;
+   cursor: pointer;
+   width: 60%;
+}
+
+.newsletter-container button:hover {
+   background-color: #0056b3;
+}
+
+
+
+/* Testimonal section */
+.test{
+   padding-top: 2rem;
+   text-align: center;
+   color: rgba(156, 64, 156, 0.838);
+   font-size: 30px;
+   /* padding: 20px; */
+   background-color:rgb(246, 241, 233) ;
+}
+.testimonal{
+   padding: 2rem;
+   background-color: rgb(246, 241, 233);
+   display: flex;
+   justify-content: space-around;
+   /* margin: 50px; */
+}
+.card{
+   display: flex;
+   flex-direction: column;
+   width: 350px;
+   height: 480px;
+   background-color: black;
+   border-radius: 5%;
+}
+.img img{
+   margin: 10px;
+   width: 330px;
+   height: 320px;
+   border-radius: 5% 5%;
+}
+.testies {
+   margin: 10px;
+   color: white;
+} 
+
+.btn{
+   padding: 0.5rem;
+   font-size: medium;
+   font-weight: 400;
+   border: none;
+   border-radius: 8%;
+   background-color: rgb(205, 53, 232);
+   color: white;
+   cursor: pointer;
+
+}
+
+.btn:hover{
+   background-color: rgb(191, 8, 223);
+   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* footer */
+.footer {
+   position: relative; /* Add this */
+   bottom: 0;
+   width: 100%;
+   /* background-color: #f8f9fa; Optional */
+   text-align: center;
+   padding: 10px;
+   /* background-color: rgb(238,182,216); */
+   background: radial-gradient(circle, rgba(238,182,216,1) 0%, rgba(148,122,164,1) 100%);
+   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5), 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+}
+.f-info-links a{
+   text-decoration: none;
+   color: #222222;
+}
+
+.f-info-links a:hover{
+   text-decoration: underline;
+}
+
+.f-info-links .f-info-social{
+   width: 100%;
+
+}
+
+
+.f-info-social i{
+  margin-right: 1rem; 
+  font-size: 1.2rem;
+
+}
+
+.f-info{
+   text-align: center;
+   height: 8rem;
+   background: radial-gradient(circle, rgba(238,182,216,1) 0%, rgba(148,122,164,1) 100%);
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: space-evenly;
+   gap: 0.2rem;
+}
+

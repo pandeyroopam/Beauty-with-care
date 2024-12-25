@@ -1,0 +1,146 @@
+.show-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgb(246, 241, 233);
+    font-family: 'Playfair Display', serif;
+}
+
+.inner-cont{
+    background-color: aliceblue;
+    width: 80%;
+    padding: 2rem;
+    
+}
+
+.show-btn{
+    display: flex;
+    gap: 1rem;
+    text-align: end;
+    justify-content: end;
+}
+
+.btn{
+    padding: 0.5rem;
+    font-size: medium;
+    font-weight: 400;
+    border: none;
+    border-radius: 8%;
+    background-color: rgba(148,122,164,1);
+    color: white;
+}
+
+.btn:hover{
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.10);
+
+}
+
+.show-Image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 85% !important;
+    object-fit: cover !important;
+}
+
+.show-title{
+    text-align: center;
+}
+
+.show-img {
+    height: 55vh;
+}
+
+.show-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.show-content p{
+    width: 85%;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+/* 
+.show-Image img{
+    width: 90%;
+    height: 300px;
+
+} */
+
+
+.review-form {
+    margin-top: 1rem;
+    margin-bottom: 30px;
+}
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+.review-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.review-form button {
+    padding: 0.5rem;
+   font-size: medium;
+   font-weight: 400;
+   border: none;
+   border-radius: 8%;
+   background-color: rgb(205, 53, 232);
+   color: white;
+    cursor: pointer;
+}
+.review-form button:hover {
+    background-color: rgb(191, 8, 223);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.5);}
+
+.rating{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.review-list {
+    margin-top: 20px;
+}
+.review-item {
+    width: 45% ;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.review-item h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+.review-item p {
+    margin: 0;
+    color: #555;
+}
+
+.review-box{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    gap: 20px; /* Add spacing between items */
+}

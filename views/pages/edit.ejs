@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="/css/editor.css">
+<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+<% layout("/layouts/boilerplate")%>
+
+<div class="edit-container">
+   
+
+<form action="/home/blog/<%-blog._id%>?_method=PUT" method="POST" class="edit-form" enctype="multipart/form-data">  
+     <!-- title section of the text editor -->
+
+     <div class="title">
+        <input type="text" id="title" name="title" placeholder="Title" value="<%-blog.title %>" required />
+    </div>
+     <br>
+        <!-- Discription section -->
+ 
+        <div id="editor">
+       
+            <label for="content"></label>
+            <textarea name="content" id="content"><%-blog.content %></textarea>
+        </div>
+        <br>
+
+        <div class="edit-img">
+           <img src="<%-blog.image %>" style="height: 100% ">
+        </div>
+        <br>
+
+        <div class="form-img">
+            <label for="Image" style="color: purple;     cursor: pointer;
+"><i class="fa-solid fa-upload"></i></i></label>
+            <input type="file" id="Image" name="Image">
+              <span id="span-img">choose new file</span>
+        </div>
+         <br>
+    <button type="submit" class="btn">Edit</button>
+</form>
+</div>
+
+<!-- Include CKEditor Script -->
+<script src="https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js"></script>
+
+<script>
+    const {
+        ClassicEditor,
+        Essentials,
+        Bold,
+        Bookmark,
+        Italic,
+        Heading,
+        Link,
+        List,
+        TodoList,
+        Font,
+        Paragraph,
+        Underline
+    } = CKEDITOR;
+
+    ClassicEditor
+        .create( document.querySelector( '#content' ), {
+            licenseKey: 'eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3MzU4NjIzOTksImp0aSI6ImY5MTljNjBhLTFlZWYtNGZlNy04NzFiLTBkMzQ4YTdlYzZjOSIsInVzYWdlRW5kcG9pbnQiOiJodHRwczovL3Byb3h5LWV2ZW50LmNrZWRpdG9yLmNvbSIsImRpc3RyaWJ1dGlvbkNoYW5uZWwiOlsiY2xvdWQiLCJkcnVwYWwiLCJzaCJdLCJ3aGl0ZUxhYmVsIjp0cnVlLCJsaWNlbnNlVHlwZSI6InRyaWFsIiwiZmVhdHVyZXMiOlsiKiJdLCJ2YyI6ImMxODgzNWZiIn0.dFrUljchqUz6O2tz3yPs_YvfMfzkt0ZSP8uKs_wE5yL06KA5Tn2oJ3_TPsuvYiHax5ITEMw386dkuouhPKx8Zg',
+            plugins: [ Essentials, Bold, Bookmark,	TodoList, List,
+            Italic, Heading, Link, Font, Paragraph, Underline ],
+            toolbar: [
+                'undo', 'redo', '|', 'bold', 'italic', 'bookmark' ,'|','heading','link', 'caseChange','bulletedList',
+			'numberedList','todoList', 'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor','underline'
+
+            ]
+        } )
+        .then( /* ... */ )
+        .catch( /* ... */ );
+</script>
+
+<script>
+     const fileInput = document.getElementById('Image');
+    const fileChosen = document.getElementById('span-img');
+
+    fileInput.addEventListener('change', function () {
+        fileChosen.textContent = this.files[0].name;
+    });
+</script>
+

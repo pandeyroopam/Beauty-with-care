@@ -1,0 +1,154 @@
+
+<% layout("/layouts/boilerplate")%>
+
+<!-- body -->
+  <div class="structure">
+    <!-- Automatic SlideShow section -->
+     <section>
+    <div class="slideShow">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1/3</div>
+              <img src="./images/hero image.jpg" alt="image2" style="width: 100vw; height: 100vh;">
+              <div class="text">Caption</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2/3</div>
+              <img src="./images/image2.jpg" alt="image2" style="width: 100vw; height: 100vh;">
+              <div class="text">Caption</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/3</div>
+              <img src="./images/image3.jpg" alt="image2" style="width: 100vw; height: 100vh;">
+              <div class="text">Caption</div>
+        </div>
+        
+    </div>
+    <br>
+     <!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</section>
+<!-- Product bio section -->
+ <section id="Product-bio">
+  <div class="bio">
+  <h1>Blog</h1>
+  </div>
+  <div class="breif">
+
+    <!-- <div class="bio">
+      <h1>Product bio</h1>
+      </div> -->
+    <!-- hair oil -->
+  <div class="product">
+    <div class="info">
+        <h2>Hair Oil</h2>
+        <p>Besides, using a good shampoo and conditioner, hair growth oils are the most basic product to take care of your hair and scalp health. It helps deep-condition your tresses, nourish the follicles and strengthen the roots. What’s more? Different organic hair oils in India offer different benefits to control hair loss, remove dandruff, promote hair growth, and thickness.
+            Organic Harvest brings you a curated range of the best hair oils for hair growth that is made of plant-derived compounds for specific hair types and concerns. The best part about them is that they are 100% pure hair growth oils, free from any harsh chemicals like paraben, mineral oils, PABA, or toxic substances. Read on to know more about this unique range.</p>
+    </div>
+    <div class="image">
+        <img src="/images/coconut oil.jpg" alt="hair oil">
+    </div>
+</div>
+<!-- Alovera gel -->
+  <div class="product">
+   <div class="image"><img src="/images/Pure_Aloe_Vera_Gel.avif" alt=""></div>
+   <div class="info">
+    <h2>Aloe Vera Gel</h2>
+    <p>Aloe vera is gel from the leaves of aloe plants. People have used it for thousands of years for healing and softening the skin. Aloe has also long been a folk treatment for many maladies, including constipation and skin disorders.</p>
+   </div>
+  </div>
+  <!-- Glycerine -->
+  <div class="product">
+   <div class="info">
+    <h2>Glycerine</h2>
+    <p>Glycerin, also known as glycerol, is a natural compound derived from vegetable oils or animal fats. It’s a clear, colorless, odorless, and syrupy liquid with a sweet taste.
+
+       <br> Glycerin is a humectant, a type of moisturizing agent that pulls water into the outer layer of your skin from deeper levels of your skin and the air.</p>
+   </div>
+   <div class="image"><img src="/images/glycerine.jpg" alt=""></div>
+  </div>
+  <!-- Rose water -->
+  <div class="product">
+    <div class="image"><img src="/images/rose water.jpg" alt=""></div>
+    <div class="info">
+        <h2>Rose Water</h2>
+        <p>Rose perfumes are made from rose oil, also called attar of roses, which is a mixture of volatile essential oils obtained by steam-distilling the crushed petals of roses. Rose water is a by-product of this process.[5] Before the development of the technique of distilling rose water,</p>
+    </div>
+  </div>
+    <!-- button -->
+     <div class="button" style="padding: 10px;">
+      <form action="/home/blog" method="Get">
+      <button class="btn">Read More</button>
+      </form>
+     </div>
+ 
+</div>
+ 
+ </section> 
+  <!--NewsLetter Section  -->
+  <section id="NewsLetter">
+    <!-- <div>
+      <h2>Sign-Up</h2>
+      <p>To keep updated with upcoming news about Beauty and care both in parallel</p>
+    </div> -->
+    <div class="newsletter-container">
+      <h2>Sign Up for Our Newsletter</h2>
+      <p>Stay updated with the latest news and exclusive offers.</p>
+      <form action="/subscribe" method="POST">
+          <input type="email" name="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+      </form>
+  </div>
+  </section>
+<!-- testimonals -->
+<section id="testimonal">
+  <div class="test">
+    <h1>Testimonals</h1>
+  </div>
+  <div class="testimonal">
+    <!-- first photo -->
+    <div class="card">
+      <div class="img">
+        <img src="/images/photo1.jpg" alt="">
+      </div>
+      <div class="testies">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat earum ipsum, illum dolore tempora autem aliquam non explicabo molestiae iusto qui eos vitae pariatur veniam, voluptates nemo quisquam dolor animi.</p>
+      </div>
+    </div>
+    <!-- second photos -->
+    <div class="card">
+      <div class="img">
+        <img src="/images/photo3.jpg" alt="">
+      </div>
+      <div class="testies">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt voluptates saepe iusto numquam possimus dignissimos, est nostrum quisquam dolores, delectus veritatis illum distinctio at quas aut porro corrupti inventore?</p>
+      </div>
+     </div>
+     <!-- third photos -->
+    <div class="card">
+      <div class="img">
+        <img src="/images/photo2.avif" alt="">
+      </div>
+      <div class="testies">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, praesentium alias? Veritatis repudiandae quibusdam quaerat iste corrupti alias? Aliquid laborum recusandae enim cum nostrum veritatis iste ipsa quidem cumque placeat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <%- include("../includes/footer.ejs") %>
+
+</section>
+
+  </div>
+
+
+
+
+   
+ 
+

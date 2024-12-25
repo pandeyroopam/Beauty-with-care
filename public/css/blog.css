@@ -1,0 +1,85 @@
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 204, 243);
+    /* height: 100%; */
+}
+
+.heading{
+    width: 100%;
+    padding-left: 14%;
+    padding-right: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 0.5rem;
+    font-size: medium;
+    font-weight: 400;
+    border: none;
+    border-radius: 8%;
+    background-color: rgba(148,122,164,1);
+    color: white;
+}
+
+.btn:hover{
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.10);
+
+}
+
+
+
+.listings{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: aliceblue;
+    width: 85%;
+    padding: 2rem;
+}
+
+.blog-link {
+    text-decoration: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.block-link .product{
+    width: 100%;
+}
+
+.product{
+    background-color: rgb(246, 241, 233);
+    width: 90%;
+    border-radius: 2rem;
+    height: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    /* justify-content: space-between; */
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+/* card effect */
+
+.product:hover {
+    opacity: 0.6;
+    background-color: rgb(163, 154, 154);
+}
+
+.info{
+    width: 70%;
+}
+
+
+
